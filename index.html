@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FJ AIBUKS Global</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div style="font-size:1.5rem; color:var(--primary); font-weight:600;">
+           <i class="fas fa-laptop-code"></i>
+        FJ AIBUKS Global
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+
+  <!-- Side Menu -->
+  <div class="side-menu" id="sideMenu">
+    <a href="#home" onclick="toggleMenu()"><i class="fas fa-home"></i> Home</a>
+    <a href="#about" onclick="toggleMenu()"><i class="fas fa-info-circle"></i> About Us</a>
+    <a href="#services" onclick="toggleMenu()"><i class="fas fa-cogs"></i> Services</a>
+    <a href="#feedback" onclick="toggleMenu()"><i class="fas fa-comment-alt"></i> Feedback</a>
+    <a href="#contact" onclick="toggleMenu()">📞 Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero" class="fade-in">
+    <h1><i class="fas fa-globe"></i> FJ AIBUKS Global</h1>
+    <p>Building a professional Islamic tech company for the world 🌍</p>
+    <a href="#services">Our Services</a>
+  </section>
+
+  <!-- Intro Video -->
+  <section class="fade-in">
+    <h2>🎥 Watch Our Vision</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1);">
+      <iframe src="https://www.youtube.com/embed/I5hdGipC42w"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+              allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Home -->
+  <section id="home" class="fade-in">
+    <h2><i class="fas fa-home"></i> Home</h2>
+    <p>Welcome to FJ AIBUKS Global — your gateway to technology, Islamic growth, and global impact.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="fade-in">
+    <h2><i class="fas fa-info-circle"></i> About Us</h2>
+    <p>FJ AIBUKS Global is founded by Ahmad Ibrahim, a mathematician with deep roots in Islamic values. We combine education, tech, and ethics to uplift communities worldwide.</p>
+    <p class="lang">FJ AIBUKS Global an kafa shi ne ta Ahmad Ibrahim, ɗalibin lissafi mai ƙima na Musulunci. Muna haɗa ilimi, fasaha, da ƙima don ɗaga al’umma a duniya baki ɗaya.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="fade-in">
+    <h2><i class="fas fa-cogs"></i> Services</h2>
+    <div class="grid">
+      <!-- App Development -->
+      <div class="card">
+        <h3>App Development</h3>
+        <p>We build mobile & web applications with modern stacks.</p>
+        <p class="lang">Muna gina apps na wayar hannu da yanar-gizo da sabbin fasahohi.</p>
+        <ul>
+          <li>User-friendly UI/UX</li>
+          <li>Fast & secure code</li>
+          <li>Cross-platform support</li>
+        </ul>
+        <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             alt="Developers coding on laptop">
+      </div>
+
+      <!-- Branding Services -->
+      <div class="card">
+        <h3>Branding Services</h3>
+        <p>Logo, website design & social media kits that reflect your identity.</p>
+        <p class="lang">Ƙirƙirar logo, gidan yanar-gizo & kayan talla na sada Zumunta don nuna alamarka.</p>
+        <ul>
+          <li>Custom logo concepts</li>
+          <li>Responsive website themes</li>
+          <li>Social media branding package</li>
+        </ul>
+        <img src="https://images.pexels.com/photos/185933/pexels-photo-185933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             alt="Branding and identity design">
+      </div>
+
+      <!-- Education -->
+      <div class="card">
+        <h3>Tech Education</h3>
+        <p>Interactive HTML/CSS & Math tutorials in Hausa and English.</p>
+        <p class="lang">Koyarwa ta hulɗa a kan HTML/CSS & Lissafi cikin Hausa da Turanci.</p>
+        <ul>
+          <li>Live coding workshops</li>
+          <li>Practice quizzes & challenges</li>
+          <li>Certification of completion</li>
+        </ul>
+        <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+             alt="Student learning coding">
+      </div>
+
+      <!-- Future Marketplace -->
+      <div class="card">
+        <h3>Future Marketplace</h3>
+        <p>Launching soon: a halal digital marketplace for products & services.</p>
+        <p class="lang">Za a kaddamar nan gaba: kasuwa ta halal don kayayyaki & aiyuka.</p>
+        <ul>
+          <li>Verified Islamic vendors</li>
+          <li>Secure payment gateway</li>
+          <li>Community ratings & reviews</li>
+        </ul>
+        <img src="brand3.png"
+             alt="Marketplace concept">
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Your Thoughts -->
+  <section id="feedback" class="fade-in">
+    <h2><i class="fas fa-comment-alt"></i> Share Your Thoughts</h2>
+    <p>If you have feedback or ideas, send them right to our inbox:</p>
+    <form action="mailto:doctora4508@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Name" placeholder="Your Name / Sunanka" required>
+      <input type="email" name="Email" placeholder="Your Email / Imel dinka" required>
+      <textarea name="Message" rows="5" placeholder="Your Message / Saƙonka" required></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <h2>📞 Contact Us</h2>
+    <p>
+      WhatsApp: <a href="https://wa.me/2349134093723">+234 913 409 3723</a><br>
+      Email: <a href="mailto:doctora4508@gmail.com">doctora4508@gmail.com</a>
+    </p>
+  </section>
+
+  <!-- Floating Contact Button -->
+  <a href="#contact" class="floating-contact">📞 Contact Us</a>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 FJ AIBUKS Global. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Toggle side menu
+    function toggleMenu() {
+      const menu = document.getElementById('sideMenu');
+      menu.style.right = menu.style.right === '0px' ? '-250px' : '0px';
+    }
+    // Fade-in on scroll
+    document.querySelectorAll('.fade-in').forEach(el => {
+      new IntersectionObserver(([entry], obs) => {
+        if (entry.isIntersecting) {
+          el.classList.add('show');
+          obs.unobserve(el);
+        }
+      }, { threshold: 0.2 }).observe(el);
+    });
+  </script>
+</body>
+</html>
